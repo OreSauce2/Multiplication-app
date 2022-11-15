@@ -15,7 +15,7 @@ if (!score) {
 
 questionEl.innerText = `What is ${num1} multiply by ${num2}?`
 
-scoreEl.innerText = 'Score: ' + score;
+scoreEl.innerText = 'Score: ${score}';
 const correctAnswer = num1 * num2;
 
 formEl.addEventListener('submit', () => {
