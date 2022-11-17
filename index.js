@@ -15,20 +15,19 @@ if (!score) {
 
 questionEl.innerText = `What is ${num1} multiply by ${num2}?`
 
-scoreEl.innerText = 'Score: ${score}';
+// scoreEl.innerText = 'Score: ${score}';
+scoreEl.innerHTML = `Score: ${score}`;
+
 const correctAnswer = num1 * num2;
 
 formEl.addEventListener('submit', () => {
-    const userAns = +inputEl.value
+    const userAns = +inputEl.value;
     if (userAns === correctAnswer) {
         score++;
-        updateLocalStorage()
+        updateLocalStorage();
     } else {
         score--;
-        updateLocalStorage()
+        updateLocalStorage();
     }
 });
 
-function updateLocalStorage() {
-    localStorage.setItem('score', Json.stringify(score))
-}

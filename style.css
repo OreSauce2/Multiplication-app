@@ -67,10 +67,6 @@ form {
     cursor: pointer;
 }
 
-.btn:active {
-    background: black;
-}
-
 .score {
     color: green;
     text-align: right;
